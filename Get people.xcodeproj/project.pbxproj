@@ -14,6 +14,7 @@
 		C3A1C798278E12A000CAE420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C797278E12A000CAE420 /* Assets.xcassets */; };
 		C3A1C79B278E12A000CAE420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */; };
 		C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */; };
+		C3A1C7A5278E1F6B00CAE420 /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C3A1C79A278E12A000CAE420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3A1C79C278E12A000CAE420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlimsViewController.swift; sourceTree = "<group>"; };
+		C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				C3A1C790278E129C00CAE420 /* SceneDelegate.swift */,
 				C3A1C792278E129C00CAE420 /* GetPeopleViewController.swift */,
 				C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */,
+				C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */,
 				C3A1C794278E129C00CAE420 /* Main.storyboard */,
 				C3A1C797278E12A000CAE420 /* Assets.xcassets */,
 				C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				C3A1C793278E129C00CAE420 /* GetPeopleViewController.swift in Sources */,
 				C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */,
+				C3A1C7A5278E1F6B00CAE420 /* StarWarsModel.swift in Sources */,
 				C3A1C78F278E129C00CAE420 /* AppDelegate.swift in Sources */,
 				C3A1C791278E129C00CAE420 /* SceneDelegate.swift in Sources */,
 			);
