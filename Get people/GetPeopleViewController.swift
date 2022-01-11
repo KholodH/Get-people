@@ -9,7 +9,8 @@ import UIKit
 
 class GetPeopleViewController: UIViewController {
     @IBOutlet weak var pTable: UITableView!
-    var peopleList = [String]()
+    var peopleList = [PeopleData]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         pTable.dataSource = self
@@ -22,7 +23,16 @@ class GetPeopleViewController: UIViewController {
                                 if let results = jsonResult["results"] as? NSArray {
                                     for person in results {
                                         let personDict = person as! NSDictionary
-                                        self.peopleList.append(personDict["name"]! as! String)
+                                        self.peopleList.append(
+                                        PeopleData(
+                                            name:personDict["name"]! as! String,
+                                            gender: personDict["gender"]! as! String,
+                                            birthYear: personDict["birth_year"]! as! String,
+                                            mass: personDict["mass"]! as! String
+                                        )
+                                    )
+
+                                       
                                     }
                                 }
                             }
@@ -35,10 +45,7 @@ class GetPeopleViewController: UIViewController {
                 })
             }
 
-                        // execute the task and then wait for the response
-                // to run the completion handler. This is async!
-               // task.resume()
-        }
+}
     
     
 
@@ -49,11 +56,22 @@ extension GetPeopleViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        cell.textLabel?.text = peopleList[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! PeopleTableViewCell
+        cell.nameLabel.text = " \(peopleList[indexPath.row].name)"
+        cell.secondL.text = " \(peopleList[indexPath.row].gender)"
+        cell.thirdL.text = " \(peopleList[indexPath.row].mass)"
+        cell.fourthL.text = " \(peopleList[indexPath.row].birthYear)"
+
         return cell
     }
     
-    
-}
 
+    }
+
+
+struct PeopleData {
+    var name: String
+    var gender: String
+    var birthYear: String
+    var mass: String
+}

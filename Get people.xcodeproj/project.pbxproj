@@ -15,6 +15,8 @@
 		C3A1C79B278E12A000CAE420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */; };
 		C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */; };
 		C3A1C7A5278E1F6B00CAE420 /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */; };
+		C3A1C7AB278E405D00CAE420 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7AA278E405D00CAE420 /* FilmTableViewCell.swift */; };
+		C3A1C7AD278E46A100CAE420 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7AC278E46A100CAE420 /* PeopleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C3A1C79C278E12A000CAE420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlimsViewController.swift; sourceTree = "<group>"; };
 		C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
+		C3A1C7AA278E405D00CAE420 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		C3A1C7AC278E46A100CAE420 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */,
 				C3A1C7A4278E1F6B00CAE420 /* StarWarsModel.swift */,
 				C3A1C794278E129C00CAE420 /* Main.storyboard */,
+				C3A1C7AA278E405D00CAE420 /* FilmTableViewCell.swift */,
+				C3A1C7AC278E46A100CAE420 /* PeopleTableViewCell.swift */,
 				C3A1C797278E12A000CAE420 /* Assets.xcassets */,
 				C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */,
 				C3A1C79C278E12A000CAE420 /* Info.plist */,
@@ -147,7 +153,9 @@
 				C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */,
 				C3A1C7A5278E1F6B00CAE420 /* StarWarsModel.swift in Sources */,
 				C3A1C78F278E129C00CAE420 /* AppDelegate.swift in Sources */,
+				C3A1C7AB278E405D00CAE420 /* FilmTableViewCell.swift in Sources */,
 				C3A1C791278E129C00CAE420 /* SceneDelegate.swift in Sources */,
+				C3A1C7AD278E46A100CAE420 /* PeopleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

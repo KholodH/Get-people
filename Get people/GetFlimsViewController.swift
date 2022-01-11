@@ -8,13 +8,14 @@
 import UIKit
 
 class GetFlimsViewController: UIViewController {
- var filmsList = [String]()
+ var filmsList = [FilmDetails]()
     @IBOutlet weak var filmTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         filmTable.dataSource = self
-    
+        filmTable.delegate = self
+
         FlimsModel.getAllFilms(completionHandler: { // passing what becomes "completionHandler" in the 'getAllPeople' function definition in StarWarsModel.swift
             data, response, error in
                 do {
@@ -22,9 +23,15 @@ class GetFlimsViewController: UIViewController {
                     if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                         if let results = jsonResult["results"] as? NSArray {
                             for person in results {
-                                let personDict = person as! NSDictionary
-                                self.filmsList.append(personDict["title"]! as! String)
-                            }
+                                let filmDict  = person as! NSDictionary
+                                self.filmsList.append(
+                                                             FilmDetails(
+                                                                 filmTitle: filmDict["title"]! as! String,
+                                                                 openingCrawl: filmDict["opening_crawl"]! as! String,
+                                                                 director: filmDict["director"]! as! String,
+                                                                 releaseDate: filmDict["release_date"]! as! String
+                                                             )
+                                                         )                            }
                         }
                     }
                     DispatchQueue.main.async {
@@ -39,17 +46,27 @@ class GetFlimsViewController: UIViewController {
     }
 
 
-extension GetFlimsViewController: UITableViewDataSource {
+extension GetFlimsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filmsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell2", for: indexPath)
-        cell.textLabel?.text = filmsList[indexPath.row]
+        let cell = filmTable.dequeueReusableCell(withIdentifier: "MyCell2") as! FilmTableViewCell
+        cell.name.text = filmsList[indexPath.row].filmTitle
+        cell.dirLabel.text = filmsList[indexPath.row].director
+        cell.yearLabel.text = filmsList[indexPath.row].openingCrawl
+        cell.exLabel.text = filmsList[indexPath.row].releaseDate
+
         return cell
     }
     
     
 }
 
+struct FilmDetails {
+    var filmTitle: String
+    var openingCrawl: String
+    var director: String
+    var releaseDate: String
+}
