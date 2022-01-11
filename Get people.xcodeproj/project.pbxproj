@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C3A1C78F278E129C00CAE420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C78E278E129C00CAE420 /* AppDelegate.swift */; };
 		C3A1C791278E129C00CAE420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C790278E129C00CAE420 /* SceneDelegate.swift */; };
-		C3A1C793278E129C00CAE420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C792278E129C00CAE420 /* ViewController.swift */; };
+		C3A1C793278E129C00CAE420 /* GetPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C792278E129C00CAE420 /* GetPeopleViewController.swift */; };
 		C3A1C796278E129C00CAE420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C794278E129C00CAE420 /* Main.storyboard */; };
 		C3A1C798278E12A000CAE420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C797278E12A000CAE420 /* Assets.xcassets */; };
 		C3A1C79B278E12A000CAE420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */; };
+		C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3A1C78B278E129C00CAE420 /* Get people.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get people.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A1C78E278E129C00CAE420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A1C790278E129C00CAE420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3A1C792278E129C00CAE420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3A1C792278E129C00CAE420 /* GetPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleViewController.swift; sourceTree = "<group>"; };
 		C3A1C795278E129C00CAE420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3A1C797278E12A000CAE420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3A1C79A278E12A000CAE420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3A1C79C278E12A000CAE420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlimsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C3A1C78E278E129C00CAE420 /* AppDelegate.swift */,
 				C3A1C790278E129C00CAE420 /* SceneDelegate.swift */,
-				C3A1C792278E129C00CAE420 /* ViewController.swift */,
+				C3A1C792278E129C00CAE420 /* GetPeopleViewController.swift */,
+				C3A1C7A2278E1A3000CAE420 /* GetFlimsViewController.swift */,
 				C3A1C794278E129C00CAE420 /* Main.storyboard */,
 				C3A1C797278E12A000CAE420 /* Assets.xcassets */,
 				C3A1C799278E12A000CAE420 /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A1C793278E129C00CAE420 /* ViewController.swift in Sources */,
+				C3A1C793278E129C00CAE420 /* GetPeopleViewController.swift in Sources */,
+				C3A1C7A3278E1A3000CAE420 /* GetFlimsViewController.swift in Sources */,
 				C3A1C78F278E129C00CAE420 /* AppDelegate.swift in Sources */,
 				C3A1C791278E129C00CAE420 /* SceneDelegate.swift in Sources */,
 			);

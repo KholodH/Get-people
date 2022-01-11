@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GetPeopleViewController: UIViewController {
     @IBOutlet weak var pTable: UITableView!
     var peopleList = [String]()
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }
 
 
-extension ViewController: UITableViewDataSource {
+extension GetPeopleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return peopleList.count
     }
